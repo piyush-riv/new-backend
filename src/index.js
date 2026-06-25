@@ -12,12 +12,12 @@ dotenv.config({
     path: './env'
 })
 
-
+//had error in dns nodejs windows problem explain
 
 const startServer = async () => {
     try {
         await connectDB(); // async function always returns promise await waits fort the promise
-        const PORT = process.env.PORT || 8000;
+        const PORT = process.env.PORT || 3000;
         const server = app.listen( PORT, () => { //returns a http server object
             console.log(`Server is running at port ${process.env.PORT || 8000}`);
         });

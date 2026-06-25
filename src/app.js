@@ -21,5 +21,20 @@ app.use(express.static("public"))
 
 app.use(cookieParser())
 
+//routes
+
+import userRouter from './routes/user.routes.js'
+
+
+//routes declartion
+//we used to do app.get() and everything used to work, it used to work because we do routes and controller in one single file
+//because everything is seperated now the format is :-
+//app.use("/users",userRouter)
+
+
+app.use("/api/v1/users",userRouter)
+
+//http://localhost:8000/api/v1/users/register
+
 export {app}
 

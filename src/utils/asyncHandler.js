@@ -1,5 +1,5 @@
 const asyncHandler =(requestHandler) =>{
-    return (req,res,next) => {
+    return (req,res,next) => { // this gives route handler or middleware to execute a function sso return in necessary
         Promise.resolve(requestHandler(req,res,next))
         .catch((err) => next(err));
     };
