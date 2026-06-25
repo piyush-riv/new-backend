@@ -2,3 +2,30 @@ pre middleware functions are executed one after another when each middleware cal
 pre hook can run just before we save a code
 
 so we use to encrypyt password
+
+
+
+
+
+
+
+// cloudinary
+
+//cloud name do1z0hltx
+// api key 229795789282192
+// api secret ObSJDJWrZrf4A6KfxNLGVYFWIcg
+
+
+
+// statergy
+/*
+    cloudinary takes file from us and uploads it to its server
+    what will be do is use multer and store in our local server
+    then by using cloudinary we retrive the file from local server and put it the server
+
+    why 2 steps req
+    if some problem occur then we have in local server temporairly
+    
+
+
+*/
